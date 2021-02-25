@@ -69,12 +69,7 @@ ul{
 a{
   text-decoration: none;
 }
-img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-  
-}
+
 
 /*===== CLASS CSS ===== */
 .section-title{
@@ -200,11 +195,14 @@ img{
   align-self: center;
 }
 .home__title{
-  font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  font-size:36px;
+  margin-bottom: ;
+  font-weight:bolder ;
+  
+  
 }
 .home__title-color{
-  color: var(--first-color);
+  color: #0F0F0F;
 }
 .home__social{
   display: flex;
@@ -225,6 +223,14 @@ img{
   bottom: 0;
   width: 295px;
   
+}
+
+.avatar{
+  width: 20rem;
+  margin: 0;
+    padding: 0;
+    transform: translate(.5rem,-.5rem);
+    transition: transform .5s ease-in-out;
 }
 
 /*BUTTONS*/
@@ -253,7 +259,7 @@ img{
   justify-self: center;
 }
 .about__img img{
-  width: 200px;
+  
   border-radius: .5rem;
 }
 
@@ -465,11 +471,20 @@ img{
     margin-left: auto;
     margin-right: auto;
   }
-  .home__img{
-    right: 10%;
-  }
+  
 }
 
 textarea{
   background-color:  ;
+}
+
+ .front-end{
+  font-size: 20px;
+  color: #0000004A;
+  font-weight: bold;
+}
+
+.about-sec{
+  padding: 5%;
+  width: 100%;
 }

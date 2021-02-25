@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="/assets/js/script.js"></script>
 
@@ -38,18 +40,29 @@
             </nav>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Adam</span><br> Front-end Developer</h1>
-                    <h1>
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im VipulM.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-                          <span class="wrap"></span>
-                        </a>
-                      </h1>
-                    <a href="#" class="button">Contact</a>
+
+            <div class="container-fluid about-sec">
+                <div class="row">
+
+                  <div class="col-md">
+                    <h1 class="home__title">Hi, I'm <span class="home__title-color">Adam</span><br> </h1>
+                            <span class="front-end">Front-end Developer</span>
+                            <h1>
+                                <a href="" class="typewrite" data-period="2000" data-type='[  "I am Creative.", "I Love  Design.", "I Love to Develop." ]'>
+                                  <span class="wrap"></span>
+                                </a>
+                              </h1>
+                  </div>
+
+                  <div class="col-md">
+                    <img src="assets/img/perfil.png" width="250"  alt="avatar" class="avatar">
+                  </div>
+                  
+
                 </div>
+              </div>
+
+
 
                 <div class="home__social">
                     <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
@@ -57,9 +70,6 @@
                     <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
-                <div class="home__img">
-                    <img src="assets/img/perfil.png" alt="">
-                </div>
             </section>
 
             <!--===== ABOUT =====-->
@@ -217,7 +227,7 @@
                     </form>
                 </div>
             </section>
-        </main>
+        
 
         <!--===== FOOTER =====-->
         <footer class="footer">
