@@ -25,6 +25,8 @@
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
   }
+
+  
 }
 
 /*===== Margenes =====*/
@@ -188,7 +190,7 @@ a{
 
 /*===== HOME =====*/
 .home{
-  height: calc(100vh - 3rem);
+  
   row-gap: 1rem;
 }
 .home__data{
@@ -196,9 +198,9 @@ a{
 }
 .home__title{
   font-size:36px;
-  margin-bottom: ;
-  font-weight:bolder ;
-  
+  margin-bottom: -0.8rem;
+  font-weight: 800 ;
+  width: 100vw;
   
 }
 .home__title-color{
@@ -226,10 +228,10 @@ a{
 }
 
 .avatar{
-  width: 20rem;
+  width: 15rem;
   margin: 0;
     padding: 0;
-    transform: translate(.5rem,-.5rem);
+  
     transition: transform .5s ease-in-out;
 }
 
@@ -405,6 +407,8 @@ a{
     top: 3rem;
   }
 
+  
+
   .nav{
     height: calc(var(--header-height) + 1rem);
   }
@@ -482,9 +486,62 @@ textarea{
   font-size: 20px;
   color: #0000004A;
   font-weight: bold;
+  margin-bottom: 8%;
 }
 
 .about-sec{
   padding: 5%;
   width: 100%;
+  
+}
+
+.about-grid{
+  margin: 5%;
+  
+}
+
+.about-wrap{
+  display: flex;
+  padding: 5%;
+  align-items: center;
+  max-width: 66.666667%;
+  margin-left: 16.6666667%;
+}
+
+.name-head{
+  min-width: 50%;
+}
+
+
+@media (max-width: 992px){
+.about-grid {
+    text-align: left;
+
+}
+
+.about-wrap{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+.avatar{
+  margin-bottom: 2rem;
+}
+
+.about-grid{
+  margin: 0%;
+  text-align: center;
+}
+}
+
+.bx-arrow-back{
+  color: #9a12b3;
+  font-size: 1.4rem;
+}
+
+.swipe-txt{
+  margin-left: 10%;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }

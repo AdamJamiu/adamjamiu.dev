@@ -70,11 +70,7 @@ ul{
 a{
     text-decoration: none;
 }
-img{
-    max-width: 100%;
-    height: auto;
-    display: block; // borra los espacios en blanco
-}
+
 
 /*===== CLASS CSS ===== */
 .section-title{
@@ -220,11 +216,7 @@ img{
     }
 
     &__img{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 295px;
-    }
+
 }
 
 /*BUTTONS*/
@@ -255,8 +247,7 @@ img{
         justify-self: center;
         
         & img{
-            width: 200px;
-            border-radius: .5rem;
+            
         }
     }
 }
