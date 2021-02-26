@@ -73,6 +73,8 @@ a{
 }
 
 
+
+
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -109,7 +111,7 @@ a{
   margin-right: var(--mb-2);
 }
 .l-header{
-  min-width: 100%;
+  max-width: 100%;
   background-image: url("/assets/img/squares.png") ;
   background-repeat: no-repeat;
   background-position: cover;
@@ -508,23 +510,28 @@ textarea{
 
 .about-grid{
   margin-left: 5%;
-  margin-right: 5%;
-  
-  
+  margin-right: 5%;  
   
 }
 
 .about-wrap{
   display: flex;
-  padding: 5%;
-  align-items: ;
-  max-width: 66.666667%;
-  margin-left: 16.6666667%;
+  align-items: center;
   
 }
+  
+
 
 .name-head{
   min-width: 50%;
+}
+
+
+@media (min-width: 766px){
+  .about-txt {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 
@@ -538,11 +545,11 @@ textarea{
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
-  margin-left: 5%;
 }
 
 .avatar{
   margin-bottom: 2rem;
+  width: 10rem;
 }
 
 .about-grid{
@@ -573,14 +580,26 @@ li:active{
 .scroll{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  color: #ffffff;
 }
 .home_scroll{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  transform: translate(700px, 500px );
-  
-	animation: float 6s ease-in-out infinite;
+  margin-top: 27%;
+  cursor: pointer;
+  margin-left: 45%;
+  animation-name: floating; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite; 
+	animation-timing-function: ease-in-out; 
 }
+
+@keyframes floating{ 
+	0% { transform: translate(0, 0px); } 
+	50% { transform: translate(0, 15px); } 
+	100% { transform: translate(0, -0px); }	 
+} 
+
 
 .bx-down-arrow-alt{
   font-size: 1.3em;
