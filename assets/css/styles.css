@@ -56,7 +56,7 @@ html{
 }
 body{
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
+  font-family: 'Poppins', sans-serif;
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
@@ -109,22 +109,30 @@ a{
   margin-right: var(--mb-2);
 }
 .l-header{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #fff;
+  min-width: 100%;
+  background-image: url("/assets/img/squares.png") ;
+  background-repeat: no-repeat;
+  background-position: cover;
+  color: white;
+  height: 540px;
+  background-size: 100%;
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
+
 
 /*===== NAV =====*/
 .nav{
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /*background: #171717; */
   align-items: center;
   font-weight: var(--font-semi);
+}
+
+nav{
+  overflow: hidden;
+  position:fixed;
 }
 @media screen and (max-width: 768px){
   .nav__menu{
@@ -145,6 +153,10 @@ a{
   position: relative;
   color: #fff;
 }
+
+.nav__link:active{
+  color: #9a12b3;
+}
 .nav__link:hover{
   position: relative;
 }
@@ -159,7 +171,6 @@ a{
 }
 .nav__logo{
   color: var(--second-color);
-
   color: black;
   padding: 8px;
   border-radius: 100px;
@@ -200,7 +211,6 @@ a{
   font-size:36px;
   margin-bottom: -0.8rem;
   font-weight: 800 ;
-  width: 100vw;
   
 }
 .home__title-color{
@@ -425,7 +435,7 @@ a{
     display: none;
   }
   .nav__link{
-    color: var(--second-color);
+    color: #ffffff;
   }
 
   .home{
@@ -487,6 +497,7 @@ textarea{
   color: #0000004A;
   font-weight: bold;
   margin-bottom: 8%;
+  
 }
 
 .about-sec{
@@ -496,16 +507,20 @@ textarea{
 }
 
 .about-grid{
-  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  
   
 }
 
 .about-wrap{
   display: flex;
   padding: 5%;
-  align-items: center;
+  align-items: ;
   max-width: 66.666667%;
   margin-left: 16.6666667%;
+  
 }
 
 .name-head{
@@ -515,7 +530,7 @@ textarea{
 
 @media (max-width: 992px){
 .about-grid {
-    text-align: left;
+  
 
 }
 
@@ -523,6 +538,7 @@ textarea{
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
+  margin-left: 5%;
 }
 
 .avatar{
@@ -544,4 +560,26 @@ textarea{
   margin-left: 10%;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
+}
+
+.about-txt{
+  line-height: 1.8;
+}
+
+li:active{
+  color: #9273cd;
+}
+
+.scroll{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.home_scroll{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transform: translate(700px, 500px );
+}
+
+.bx-down-arrow-alt{
+  font-size: 1.3em;
 }
